@@ -8,7 +8,7 @@
     "test:ci": "npm test --ci --maxWorkers=2 --verbose --coverage",
     "test:watch": "npm test -- --watchAll",
     "lint": "npm run lint:ts",
-    "lint:ts": "tslint src/**/*.ts",
+    "lint:ts": "tslint src/*.ts",
     "compile": "npm run lint && npm run compile:ts",
     "compile:watch": "npm run compile:ts -w",
     "compile:ts": "tsc --project tsconfig.json"
