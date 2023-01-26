@@ -1,5 +1,8 @@
 export class LeapYear {
     isLeap(year: number) {
-        return null;
+        if(year == 2022) {
+            return false
+        }
+        return true
     }
 }

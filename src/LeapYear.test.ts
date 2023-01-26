@@ -10,7 +10,7 @@ import {LeapYear} from './LeapYear';
  *
  * # Tests:
  *
- * - [ ] 2022 is not leap
+ * - [x] 2022 is not leap
  * - [ ] 2024 is leap
  * - [ ] 1900 is not leap
  * - [ ] 2000 is leap
@@ -25,5 +25,15 @@ describe('Determining leap years', () => {
         const result = sut.isLeap(year);
         // assert
         expect(result).toStrictEqual(false);
+    });
+
+    it('returns true for 2024', () => {
+        // arrange
+        const sut = new LeapYear();
+        const year = 2024;
+        // act
+        const result = sut.isLeap(year);
+        // assert
+        expect(result).toStrictEqual(true);
     });
 });
