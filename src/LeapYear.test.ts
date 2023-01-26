@@ -17,7 +17,13 @@ import {LeapYear} from './LeapYear';
  */
 
 describe('Determining leap years', () => {
-    it('works', () => {
-        expect(false).toBeTruthy();
+    it('returns false for 2022', () => {
+        // arrange
+        const sut = new LeapYear();
+        const year = 2022;
+        // act
+        const result = sut.isLeap(year);
+        // assert
+        expect(result).toStrictEqual(false);
     });
 });
